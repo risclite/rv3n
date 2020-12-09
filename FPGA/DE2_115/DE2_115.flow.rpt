@@ -1,0 +1,127 @@
+Flow report for DE2_115
+Wed Dec 09 11:37:20 2020
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Wed Dec 09 11:36:59 2020       ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Revision Name                      ; DE2_115                                     ;
+; Top-level Entity Name              ; DE2_115                                     ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE115F29C7                               ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 8,038 / 114,480 ( 7 % )                     ;
+;     Total combinational functions  ; 7,793 / 114,480 ( 7 % )                     ;
+;     Dedicated logic registers      ; 2,862 / 114,480 ( 3 % )                     ;
+; Total registers                    ; 2862                                        ;
+; Total pins                         ; 436 / 529 ( 82 % )                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 524,288 / 3,981,312 ( 13 % )                ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                              ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 12/09/2020 11:34:38 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; DE2_115             ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                ;
++-------------------------------------+--------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+--------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 50846040375493.160748487705156 ; --            ; --          ; --         ;
+; ENABLE_OCT_DONE                     ; Off                            ; On            ; --          ; --         ;
+; IP_TOOL_NAME                        ; ALTPLL                         ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; RAM: 2-PORT                    ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 13.1                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; pll/pll_bb.v                   ; --            ; --          ; --         ;
+; MISC_FILE                           ; pll/pll.ppf                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; ram/dualram_inst.v             ; --            ; --          ; --         ;
+; MISC_FILE                           ; ram/dualram_bb.v               ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; 16764057                       ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; --          ; Top        ;
+; SEARCH_PATH                         ; ../../rtl/                     ; --            ; --          ; --         ;
+; SEARCH_PATH                         ; ../ram                         ; --            ; --          ; --         ;
+; SEARCH_PATH                         ; ../test                        ; --            ; --          ; --         ;
++-------------------------------------+--------------------------------+---------------+-------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:33     ; 1.0                     ; 560 MB              ; 00:00:32                           ;
+; Fitter                    ; 00:01:46     ; 1.5                     ; 1328 MB             ; 00:02:15                           ;
+; TimeQuest Timing Analyzer ; 00:00:16     ; 1.5                     ; 686 MB              ; 00:00:22                           ;
+; Total                     ; 00:02:35     ; --                      ; --                  ; 00:03:09                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; WINDOWS-FESQ6ER  ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; WINDOWS-FESQ6ER  ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; WINDOWS-FESQ6ER  ; Windows 7 ; 6.1        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off DE2_115 -c DE2_115
+quartus_fit --read_settings_files=off --write_settings_files=off DE2_115 -c DE2_115
+quartus_sta DE2_115 -c DE2_115
+
+
+
